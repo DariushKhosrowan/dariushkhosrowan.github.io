@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO: Primary -->
+  <title>Dariush Khosrowan — Electrical & Control Engineer, AI & Robotics Researcher</title>
+  <meta name="description" content="Dariush Khosrowan (formerly Amirhossein Eslami) — Electrical Engineering (Control) student at Iran University of Science and Technology. Researcher in robotics, AI/ML, control systems, and computer vision. Building Rust & AI tools. Main website: khosrowan.ir" />
+  <meta name="keywords" content="Dariush Khosrowan, Amirhossein Eslami, Khosrowan, electrical engineering, control engineering, robotics, artificial intelligence, machine learning, computer vision, rust, khvarenah, pangan, khosrowan.ir" />
+  <meta name="author" content="Dariush Khosrowan" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0a0806" />
+  <link rel="canonical" href="https://dariushkhosrowan.github.io/" />
+  <meta name="referrer" content="origin" />
+
+  <!-- SEO: Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Dariush Khosrowan — Electrical & Control Engineering, AI & Robotics" />
+  <meta property="og:description" content="Researcher, writer and engineer fascinated by intelligent systems. Electrical & Control Engineering · AI & Robotics. Main website: khosrowan.ir" />
+  <meta property="og:url" content="https://dariushkhosrowan.github.io/" />
+  <meta property="og:site_name" content="Dariush Khosrowan" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- SEO: Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dariush Khosrowan — Electrical & Control Engineering, AI & Robotics" />
+  <meta name="twitter:description" content="Researcher, writer and engineer fascinated by intelligent systems. Main website: khosrowan.ir" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "name": "Dariush Khosrowan",
+    "url": "https://dariushkhosrowan.github.io/",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Dariush Khosrowan",
+      "alternateName": ["Amirhossein Eslami", "خسروان"],
+      "jobTitle": "Electrical & Control Engineer",
+      "description": "Electrical Engineering (Control) student at Iran University of Science and Technology, focused on robotics, AI/ML, control systems, computer vision and intelligent engineering solutions. Researching decentralized and safe formation control for mobile robots.",
+      "address": { "@type": "PostalAddress", "addressLocality": "Tehran", "addressCountry": "IR" },
+      "url": "https://khosrowan.ir",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Iran University of Science and Technology"
+      },
+      "sameAs": [
+        "https://khosrowan.ir",
+        "https://github.com/DariushKhosrowan"
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Dariush Khosrowan",
+    "url": "https://khosrowan.ir",
+    "sameAs": ["https://github.com/DariushKhosrowan"],
+    "owns": [
+      { "@type": "SoftwareApplication", "name": "Khvarenah", "url": "https://khvarenah.dev/" },
+      { "@type": "SoftwareApplication", "name": "Pangan", "url": "https://github.com/DariushKhosrowan/pangan" }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --gold: #d4af37;
+      --gold-dim: #96782a;
+      --ink: #0a0806;
+      --panel: #18140e;
+      --text: #ebe4c8;
+      --muted: #b3a986;
+      --radius: 14px;
+      --shadow: 0 12px 40px rgba(0,0,0,.45);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background:
+        radial-gradient(1200px 600px at 80% -10%, rgba(212,175,55,.12), transparent 60%),
+        radial-gradient(900px 500px at 10% 110%, rgba(212,175,55,.08), transparent 55%),
+        var(--ink);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { color: #eccf63; }
+
+    /* Announcement banner */
+    .announce {
+      background: linear-gradient(90deg, #1a1408, #2a200c);
+      border-bottom: 1px solid rgba(212,175,55,.25);
+      text-align: center;
+      padding: 10px 20px;
+      font-size: .92rem;
+    }
+    .announce a { font-weight: 700; }
+    .announce .dot { color: var(--gold); }
+
+    header { position: sticky; top: 0; z-index: 20; background: rgba(10,8,6,.8); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(212,175,55,.15); }
+    .nav { max-width: 1100px; margin: 0 auto; padding: 18px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .brand { font-weight: 800; font-size: 1.15rem; letter-spacing: .5px; }
+    .brand .gold { color: var(--gold); }
+    .nav-links a { margin-left: 22px; color: var(--muted); font-size: .95rem; }
+    .nav-links a:hover { color: var(--gold); }
+
+    main { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    .hero { padding: 80px 0 50px; text-align: center; }
+    .hero .avatar {
+      width: 112px; height: 112px; border-radius: 50%;
+      background: linear-gradient(135deg, #e6c14f, var(--gold));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 3rem; font-weight: 800; color: #1a1408;
+      margin: 0 auto 22px;
+      box-shadow: 0 8px 30px rgba(212,175,55,.35);
+    }
+    .hero .badge {
+      display: inline-block;
+      background: rgba(212,175,55,.12);
+      border: 1px solid rgba(212,175,55,.3);
+      color: var(--gold);
+      padding: 6px 16px; border-radius: 999px;
+      font-size: .85rem; font-weight: 600; margin-bottom: 20px;
+    }
+    .hero h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.1; font-weight: 800; }
+    .hero h1 .gold { color: var(--gold); }
+    .hero p.lead { max-width: 760px; margin: 22px auto 0; color: var(--muted); font-size: 1.1rem; }
+    .cta { margin-top: 34px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn { display: inline-block; padding: 13px 26px; border-radius: 999px; font-weight: 700; font-size: .98rem; transition: transform .15s ease, box-shadow .15s ease; }
+    .btn-primary { background: linear-gradient(135deg, #e6c14f, var(--gold)); color: #1a1408; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: var(--shadow); color: #1a1408; }
+    .btn-ghost { border: 1px solid rgba(212,175,55,.4); color: var(--gold); }
+    .btn-ghost:hover { background: rgba(212,175,55,.08); }
+
+    .section { padding: 50px 0; }
+    .card { background: var(--panel); border: 1px solid rgba(212,175,55,.14); border-radius: var(--radius); padding: 30px; }
+    h2 { font-size: 1.7rem; color: var(--gold); margin-bottom: 14px; }
+    h3 { color: var(--gold); margin: 22px 0 8px; }
+    ul, ol { padding-left: 22px; }
+
+    .grid { display: grid; gap: 22px; }
+    .grid-3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+    .feature .icon { font-size: 1.8rem; }
+
+    .timeline { margin-top: 10px; }
+    .tl-item { border-left: 2px solid rgba(212,175,55,.3); padding-left: 20px; margin: 18px 0; }
+    .tl-period { color: var(--gold-dim); font-size: .85rem; font-weight: 600; }
+    .tl-title { font-weight: 700; color: var(--text); }
+    .tl-org { color: var(--muted); font-size: .92rem; }
+
+    .skill-bar { background: #0c0a08; border-radius: 999px; height: 8px; margin: 6px 0 14px; }
+    .skill-fill { background: linear-gradient(90deg, var(--gold-dim), var(--gold)); height: 8px; border-radius: 999px; }
+
+    .stat-grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); margin: 30px 0; }
+    .stat { background: var(--panel); border: 1px solid rgba(212,175,55,.14); border-radius: var(--radius); padding: 22px; text-align: center; }
+    .stat-value { font-size: 1.8rem; font-weight: 800; color: var(--gold); }
+    .stat-label { color: var(--muted); font-size: .85rem; margin-top: 4px; }
+
+    footer { border-top: 1px solid rgba(212,175,55,.15); margin-top: 60px; padding: 34px 24px; text-align: center; color: var(--muted); font-size: .9rem; }
+    .muted { color: var(--muted); }
+  </style>
+</head>
+<body>
+
+  <div class="announce">
+    <span class="dot">◆</span> Official website: <a href="https://khosrowan.ir">khosrowan.ir</a> — Persian & English, research, blog & projects <span class="dot">◆</span>
+  </div>
+
+  <header>
+    <div class="nav">
+      <div class="brand"><span class="gold">◆</span> Dariush Khosrowan</div>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#resume">Résumé</a>
+        <a href="#projects">Projects</a>
+        <a href="https://khosrowan.ir">khosrowan.ir</a>
+        <a href="https://github.com/DariushKhosrowan">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="avatar">D</div>
+      <span class="badge">✦ Electrical &amp; Control Engineering · AI &amp; Robotics</span>
+      <h1>Dariush <span class="gold">Khosrowan</span></h1>
+      <p class="lead">
+        Researcher, writer and engineer fascinated by intelligent systems.
+        The future belongs to systems that can sense, learn, adapt, and collaborate —
+        I work to build them.
+      </p>
+      <div class="cta">
+        <a class="btn btn-primary" href="https://khosrowan.ir">Visit khosrowan.ir →</a>
+        <a class="btn btn-ghost" href="#resume">View résumé</a>
+        <a class="btn btn-ghost" href="https://github.com/DariushKhosrowan">GitHub</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="card">
+        <h2>About me</h2>
+        <p class="muted">
+          I am an Electrical Engineering (Control) student at <strong>Iran University of Science and Technology</strong>,
+          focused on robotics, AI/ML, control systems, computer vision, and intelligent engineering solutions.
+          My current research is on <strong>decentralized and safe formation control for mobile robots</strong>.
+        </p>
+        <div class="grid grid-3" style="margin-top:24px;">
+          <div class="feature"><div class="icon">🎓</div><h3>Control Engineering</h3><p class="muted">Formation control, decentralized &amp; safe multi-robot systems.</p></div>
+          <div class="feature"><div class="icon">🤖</div><h3>Robotics</h3><p class="muted">Mobile robots, sensing, and adaptive behavior.</p></div>
+          <div class="feature"><div class="icon">🧠</div><h3>AI / ML</h3><p class="muted">Machine learning applied to intelligent engineering solutions.</p></div>
+          <div class="feature"><div class="icon">👁️</div><h3>Computer Vision</h3><p class="muted">Perception for autonomous &amp; intelligent systems.</p></div>
+          <div class="feature"><div class="icon">⚙️</div><h3>Rust &amp; Systems</h3><p class="muted">Fast, safe, cross-platform engineering tools.</p></div>
+          <div class="feature"><div class="icon">📝</div><h3>Technical Writing</h3><p class="muted">Research, engineering writing, documentation &amp; blogs.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <div class="stat-grid">
+      <div class="stat"><div class="stat-value">4+</div><div class="stat-label">Years of code</div></div>
+      <div class="stat"><div class="stat-value">15+</div><div class="stat-label">Public projects</div></div>
+      <div class="stat"><div class="stat-value">2</div><div class="stat-label">Rust app ecosystems</div></div>
+      <div class="stat"><div class="stat-value">∞</div><div class="stat-label">Curiosity</div></div>
+    </div>
+
+    <!-- Résumé -->
+    <section class="section" id="resume">
+      <div class="card">
+        <h2>Résumé</h2>
+        <p class="muted">Education &amp; research focus.</p>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-period">Present</div>
+            <div class="tl-title">B.Sc. Electrical Engineering — Control</div>
+            <div class="tl-org">Iran University of Science and Technology · Tehran, Iran</div>
+            <p class="muted" style="margin-top:6px;">Researching decentralized and safe formation control for mobile robots.</p>
+          </div>
+          <div class="tl-item">
+            <div class="tl-period">Current research</div>
+            <div class="tl-title">Decentralized &amp; safe formation control</div>
+            <div class="tl-org">Mobile multi-robot systems</div>
+            <p class="muted" style="margin-top:6px;">Control strategies where robots coordinate safely without a central planner.</p>
+          </div>
+        </div>
+
+        <h3>Works with</h3>
+        <div class="grid grid-2">
+          <div>
+            <div style="display:flex;justify-content:space-between;"><span>Control Systems</span><span class="muted">Expert</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div>
+            <div style="display:flex;justify-content:space-between;"><span>Robotics</span><span class="muted">Advanced</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div>
+            <div style="display:flex;justify-content:space-between;"><span>AI / ML</span><span class="muted">Advanced</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between;"><span>Computer Vision</span><span class="muted">Advanced</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div>
+            <div style="display:flex;justify-content:space-between;"><span>Rust</span><span class="muted">Advanced</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+            <div style="display:flex;justify-content:space-between;"><span>Python</span><span class="muted">Advanced</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="card">
+        <h2>Featured projects</h2>
+        <div class="grid grid-3">
+          <div class="feature">
+            <div class="icon">🛡️</div>
+            <h3>Khvarenah</h3>
+            <p class="muted">Rust-powered Cloudflare Workers VLESS VPN console — deploy workers, scan clean IPs, export configs. <a href="https://khvarenah.dev">khvarenah.dev</a></p>
+          </div>
+          <div class="feature">
+            <div class="icon">🍅</div>
+            <h3>Pangan</h3>
+            <p class="muted">Open-source Pomodoro timer &amp; productivity app in Rust + Slint, with Persian Jalali calendar and Google Drive sync. <a href="https://github.com/DariushKhosrowan/pangan">GitHub</a></p>
+          </div>
+          <div class="feature">
+            <div class="icon">🎬</div>
+            <h3>AI Video Editor</h3>
+            <p class="muted">Programmatic AI-assistant-assisted video editing toolkit — transcribe, analyze, overlay, compose.</p>
+          </div>
+        </div>
+        <p style="margin-top:22px;">
+          <a class="btn btn-ghost" href="https://github.com/DariushKhosrowan">View all projects on GitHub →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Main site -->
+    <section class="section">
+      <div class="card" style="text-align:center;border-color:rgba(212,175,55,.35);">
+        <h2>Visit my main website</h2>
+        <p class="muted" style="max-width:640px;margin:0 auto 22px;">
+          For my research, technical blog, writing, and the full portfolio in both English and Persian,
+          visit <strong>khosrowan.ir</strong>.
+        </p>
+        <a class="btn btn-primary" href="https://khosrowan.ir">Go to khosrowan.ir →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <script>document.write(new Date().getFullYear())</script> Dariush Khosrowan</p>
+    <p style="margin-top:8px;">
+      <a href="https://khosrowan.ir">khosrowan.ir</a> ·
+      <a href="https://github.com/DariushKhosrowan">GitHub</a> ·
+      <a href="https://khvarenah.dev">Khvarenah</a>
+    </p>
+  </footer>
+
+</body>
+</html>
